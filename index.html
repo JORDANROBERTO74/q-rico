@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q'RICO</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <!-- START SECTION -->
+    <section id="inicio">
+      <header>
+        <div class="contenido-header">
+          <div class="logo">
+            <h1>Q'RICO</h1>
+          </div>
+          <nav id="nav">
+            <ul>
+              <li>
+                <a href="#inicio" onclick="seleccionar()">
+                  <i class="fa-solid fa-house"></i>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="#sabores" onclick="seleccionar()">
+                  <i class="fa-solid fa-ice-cream"></i>
+                  <span>Flavors</span>
+                </a>
+              </li>
+              <li>
+                <a href="#platos" onclick="seleccionar()">
+                  <i class="fa-solid fa-utensils"></i>
+                  <span>Dishes</span>
+                </a>
+              </li>
+              <li>
+                <a href="#blog" onclick="seleccionar()">
+                  <i class="fa-solid fa-pen"></i>
+                  <span>Blog</span>
+                </a>
+              </li>
+              <li>
+                <a href="#contacto" onclick="seleccionar()">
+                  <i class="fa-solid fa-comments"></i>
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="social">
+            <a href="tel:+0000-000-0000">
+              <i class="fa-solid fa-phone"></i>+0000-000-0000
+            </a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </header>
+      <!-- Carousel -->
+      <div class="carrusel">
+        <div
+          class="gallery js-flickity"
+          data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true}'
+        >
+          <div class="gallery-cell">
+            <img src="img/1.jpg" alt="" />
+          </div>
+          <div class="gallery-cell">
+            <img src="img/2.jpg" alt="" />
+          </div>
+          <div class="gallery-cell">
+            <img src="img/3.jpg" alt="" />
+          </div>
+          <div class="gallery-cell">
+            <img src="img/4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="info">
+          <h2>Delicious dishes for your taste</h2>
+          <p>
+            Discover a wide range of flavors with our freshly prepared meals,
+            made from high-quality ingredients.
+          </p>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLAVORS SECTION -->
+    <section id="sabores">
+      <h2>Flavors</h2>
+      <div class="fila">
+        <div class="item">
+          <div class="icono">
+            <img src="img/sabor1.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>Salads</h3>
+            <p>
+              Fresh and healthy salads with a variety of toppings and dressings
+              to choose from.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icono">
+            <img src="img/sabor2.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>Cakes</h3>
+            <p>
+              Indulge in our delicious range of freshly baked cakes, perfect for
+              any occasion.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icono">
+            <img src="img/sabor3.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>Burgers</h3>
+            <p>
+              Enjoy juicy and flavorful burgers made with premium ingredients
+              and served with a variety of sides.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="item">
+          <div class="icono">
+            <img src="img/sabor4.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>Ice Creams</h3>
+            <p>
+              Cool down with our rich and creamy ice creams, available in many
+              flavors.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icono">
+            <img src="img/sabor5.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>Pasta</h3>
+            <p>
+              Delicious, homemade pasta dishes made with the finest ingredients
+              and served with unique sauces.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icono">
+            <img src="img/sabor6.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>Cookies</h3>
+            <p>
+              Try our freshly baked cookies, a perfect treat to accompany your
+              favorite drink.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button>See More</button>
+    </section>
+
+    <!-- DISHES SECTION -->
+    <section id="platos">
+      <h2>Dishes</h2>
+
+      <div class="fila">
+        <div class="item">
+          <img src="img/plato1.jpg" alt="" />
+          <p>Chiles and Fried Chicken Wings on a Plate</p>
+        </div>
+        <div class="item">
+          <img src="img/plato2.jpg" alt="" />
+          <p>Fish Salad Plate</p>
+        </div>
+        <div class="item">
+          <img src="img/plato3.jpg" alt="" />
+          <p>Grilled Steak Plate Served on a White Plate</p>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="item">
+          <img src="img/plato4.jpg" alt="" />
+          <p>Grilled Steak Plate with French Fries</p>
+        </div>
+        <div class="item">
+          <img src="img/plato5.jpg" alt="" />
+          <p>Pizza Plate with Arugula</p>
+        </div>
+        <div class="item">
+          <img src="img/plato6.jpg" alt="" />
+          <p>Pasta Plate with Sauce</p>
+        </div>
+      </div>
+
+      <button>See More</button>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section id="blog">
+      <h2>Blog</h2>
+      <div
+        class="galeria-blog js-flickity"
+        data-flickity-options='{ "wrapAround":true, "pageDots": true}'
+      >
+        <div class="gallery-cell">
+          <div class="item">
+            <div class="foto">
+              <img src="img/cheff1.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>The Art of Cooking</h3>
+              <p>
+                Cooking is a delicate art that requires passion and creativity.
+                Whether it's a simple dish or a gourmet experience, the magic is
+                in the details.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-cell">
+          <div class="item">
+            <div class="foto">
+              <img src="img/cheff2.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>Where to Study Cooking?</h3>
+              <p>
+                Aspiring chefs can study at culinary institutes worldwide. From
+                technique to presentation, there are many paths to becoming an
+                expert in the kitchen.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-cell">
+          <div class="item">
+            <div class="foto">
+              <img src="img/cheff3.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>The Cuisine of 2023</h3>
+              <p>
+                In 2023, we are seeing more plant-based dishes and innovative
+                techniques that combine sustainability with exceptional flavors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button>Read More</button>
+    </section>
+
+    <!-- CONTACT SECTION AND FOOTER -->
+    <section id="contacto">
+      <div class="fila">
+        <div class="col">
+          <h1>Q'RICO</h1>
+        </div>
+        <div class="col">
+          <h3>Menu</h3>
+          <a href="#inicio">Home</a>
+          <a href="#sabores">Flavors</a>
+          <a href="#sabores">Dishes</a>
+          <a href="#sabores">Blog</a>
+        </div>
+        <div class="col">
+          <h3>Chefs</h3>
+          <a href="#">Marcos G.</a>
+          <a href="#">María L.</a>
+          <a href="#">Marta J.</a>
+        </div>
+        <div class="col">
+          <h3>Social Media</h3>
+          <div class="media">
+            <i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a>
+          </div>
+          <div class="media">
+            <i class="fa-brands fa-instagram"></i> <a href="#">Instagram</a>
+          </div>
+        </div>
+        <div class="col">
+          <h3>Contact</h3>
+          <input type="text" placeholder="Your email" />
+          <input type="submit" class="enviar" />
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
