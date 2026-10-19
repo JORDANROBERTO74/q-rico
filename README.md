@@ -1,65 +1,54 @@
-#### English version
+# Q'Rico — Cocina honesta
 
-<div align="center"><strong>Q' RICO - Landing Page</strong></div>
-<div align="center">Built with HTML - CSS - JavaScript</div>
-<br />
+Landing page for a (fictional) restaurant. A frontend showcase built with **vanilla HTML, CSS and JavaScript** — no frameworks, no build step, no UI libraries.
 
-## Description
+## Highlights
 
-Q' RICO is a personal project developed as part of my portfolio. It is a modern and visually appealing landing page for a restaurant website, designed to showcase my front-end development skills using only HTML, CSS, and JavaScript, without relying on external frameworks or libraries.
+- **Editorial design system**: warm palette (espresso / cream / terracotta), serif display (Playfair Display) + sans body (Inter), fluid type scale with `clamp()`.
+- **Real restaurant structure**: hero, specialties, **menu with categories and prices**, about/chef, gallery, reviews, reservation form.
+- **Responsive**: from 320px to 1440px, mobile-first, no overflow.
+- **Accessible (WCAG 2.1 AA)**: skip link, semantic landmarks, visible focus, labeled form fields, `prefers-reduced-motion`.
+- **Performance**: WebP images (~2.72 MB → ~0.7 MB), no carousel library, no icon fonts (inline SVG).
+- **SEO**: meta description, Open Graph/Twitter, JSON-LD `Restaurant`, favicon.
 
-## Technologies Used
+## Stack
 
-- Markup - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- Styling - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- Scripting - [Javascript (vanilla)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- HTML5
+- CSS3 (custom properties, Grid, `clamp()`)
+- Vanilla JS (accessible nav, scroll reveal, form validation — no dependencies)
 
-## Project Purpose
+## Structure
 
-This project was created for learning and showcasing purposes. It demonstrates how a clean, interactive, and visually appealing landing page can be built using just core web technologies, focusing on performance and user experience.
+```
+index.html
+styles.css
+main.js
+favicon.svg
+.nojekyll
+img/
+  *.webp   # optimized images
+  *.jpg / *.png  # originals (fallback / source)
+```
 
-## Live Preview
+## Run locally
 
-You can see the project in action on [Github Pages](https://jordanroberto74.github.io/q-rico/).
+Open `index.html` directly, or serve the folder:
+
+```bash
+python -m http.server 8080
+```
+
+Then visit <http://localhost:8080>.
+
+## Live preview
+
+<https://jordanroberto74.github.io/q-rico/>
+
+## Notes
+
+- **Demo / fictional content**: menu, prices, address, phone and reviews are illustrative.
+- The reservation form is **front-end only**: it validates fields and shows a success state; no backend.
 
 ## Contact
 
-If you would like to learn more about my work or collaborate on future projects, feel free to contact me at jordanroberto74@gmail.com.
-
-Thank you for visiting Q' RICO!
-
-<br />
-
----
-
-<br />
-
-#### Versión en español
-
-<div align="center"><strong>Q' RICO - Página de aterrizaje</strong></div>
-<div align="center">Construida con HTML - CSS - JavaScript</div>
-<br />
-
-## Descripción
-
-Q' RICO es un proyecto personal desarrollado como parte de mi portafolio. Es una página de aterrizaje moderna y visualmente atractiva para un sitio web de restaurante, diseñada para demostrar mis habilidades en desarrollo front-end utilizando solo HTML, CSS y JavaScript, sin depender de frameworks ni bibliotecas externas.
-
-## Tecnologías Utilizadas
-
-- Marcado - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- Estilos - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- Scripting - [Javascript (vanilla)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-
-## Propósito del Proyecto
-
-Este proyecto fue creado con fines de aprendizaje y demostración. Muestra cómo se puede construir una página de aterrizaje limpia, interactiva y visualmente atractiva utilizando solo tecnologías web fundamentales, enfocándose en el rendimiento y la experiencia del usuario.
-
-## Vista Previa
-
-Puedes ver el proyecto en funcionamiento en [Github Pages](https://jordanroberto74.github.io/q-rico/).
-
-## Contacto
-
-Si deseas conocer más sobre mi trabajo o colaborar en futuros proyectos, puedes contactarme en jordanroberto74@gmail.com.
-
-¡Gracias por visitar Q' RICO!
+[jordanroberto74@gmail.com](mailto:jordanroberto74@gmail.com)
