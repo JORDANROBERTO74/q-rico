@@ -1,36 +1,24 @@
-# Q'Rico — Cocina honesta
+# Q'Rico — Cocina Honesta
 
-Landing page for a (fictional) restaurant. A frontend showcase built with **vanilla HTML, CSS and JavaScript** — no frameworks, no build step, no UI libraries.
+A restaurant landing page built around the menu: categories, prices, gallery, reviews and a reservation form. Hand-written HTML, CSS and JavaScript, with no framework or build step.
 
-## Highlights
+![Q'Rico home page with a warm dark hero, the headline "Comida honesta, sabor que se recuerda" and a row of dish photographs](docs/screenshot.webp)
 
-- **Editorial design system**: warm palette (espresso / cream / terracotta), serif display (Playfair Display) + sans body (Inter), fluid type scale with `clamp()`.
-- **Real restaurant structure**: hero, specialties, **menu with categories and prices**, about/chef, gallery, reviews, reservation form.
-- **Responsive**: from 320px to 1440px, mobile-first, no overflow.
-- **Accessible (WCAG 2.1 AA)**: skip link, semantic landmarks, visible focus, labeled form fields, `prefers-reduced-motion`.
-- **Performance**: WebP images (~2.72 MB → ~0.7 MB), no carousel library, no icon fonts (inline SVG).
-- **SEO**: meta description, Open Graph/Twitter, JSON-LD `Restaurant`, favicon.
+## What it is
 
-## Stack
+A one-page site for a fictional restaurant in Santa Cruz, Bolivia: hero, specialties, a full menu with categories and prices, the chef's story, gallery, reviews and a reservation form.
 
-- HTML5
-- CSS3 (custom properties, Grid, `clamp()`)
-- Vanilla JS (accessible nav, scroll reveal, form validation — no dependencies)
+It is a front-end showcase, not a booking product. The form validates in the browser and shows a success state; there is no backend, database or payment flow.
 
-## Structure
+## Why this over a restaurant template
 
-```
-index.html
-styles.css
-main.js
-favicon.svg
-.nojekyll
-img/
-  *.webp   # optimized images
-  *.jpg / *.png  # originals (fallback / source)
-```
+- **Editorial design system.** Espresso, cream and terracotta; Playfair Display for headings, Inter for text and a fluid `clamp()` type scale.
+- **The menu is the product.** Categories, dish names and prices are structured content, not a gallery of images — the page works the way a real menu does.
+- **Accessible (WCAG 2.1 AA).** Skip link, semantic landmarks, visible focus, labeled fields and `prefers-reduced-motion`.
+- **Performance.** WebP images (~2.72 MB reduced to ~0.7 MB), inline SVG icons and no carousel or icon library.
+- **SEO.** Meta description, Open Graph/Twitter cards and `Restaurant` JSON-LD.
 
-## Run locally
+## Quick start
 
 Open `index.html` directly, or serve the folder:
 
@@ -38,17 +26,22 @@ Open `index.html` directly, or serve the folder:
 python -m http.server 8080
 ```
 
-Then visit <http://localhost:8080>.
+Visit <http://localhost:8080>.
 
-## Live preview
+## Project structure
 
-<https://jordanroberto74.github.io/q-rico/>
+```text
+index.html              # The whole page
+styles.css              # Design tokens, layout and components
+main.js                 # Accessible nav, scroll reveal, form validation
+img/                    # Optimized WebP images
+docs/screenshot.webp    # README screenshot
+```
 
-## Notes
+## Status and scope
 
-- **Demo / fictional content**: menu, prices, address, phone and reviews are illustrative.
-- The reservation form is **front-end only**: it validates fields and shows a success state; no backend.
+Live at <https://jordanroberto74.github.io/q-rico/>. Menu, prices, address, phone and reviews are illustrative. The reservation form is front-end only: it validates and shows a success state, but sends nothing.
 
-## Contact
+## License
 
-[jordanroberto74@gmail.com](mailto:jordanroberto74@gmail.com)
+MIT. See [LICENSE](LICENSE).
